@@ -1,0 +1,297 @@
+@import url('https://fonts.googleapis.com/css2?family=Varela&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Oxygen:wght@700&display=swap');
+
+body {
+	margin: 0;
+	overflow-x: hidden;
+	font-family: 'Varela', sans-serif;
+}
+
+section {
+	min-height: 80vh;
+	display: flex;
+	padding: 10vh;
+}
+
+ul {
+	list-style: none;
+	margin: 0;
+	padding: 0;
+}
+
+/*Nav Bar*/
+/*For Pc*/
+nav {
+	height: 10vh;
+	width: 100%;
+	position: fixed;
+	background-color: white;
+	z-index: 3;
+}
+
+nav ul {
+	display: flex;
+	flex-grow: 1;
+	height: 10vh;
+	font-size: 1.5em;
+	align-items: end;
+}
+
+nav ul li {
+	padding: 0px 10px;
+}
+
+nav ul li a {
+	text-decoration: none;
+	color: grey;
+	font-size: 0.6em;
+}
+
+
+nav ul li a:hover {
+	font-size: 1em;
+	color: black;
+}
+
+
+nav ul li a.active {
+	font-size: 2em;
+	color: black;
+}
+
+#horizontal-scroll {
+	height: 80vh;
+	display: flex;
+	flex-wrap: nowrap;
+	align-items: center;
+	overflow: hidden;
+}
+
+#horizontal-scroll div {
+	width: 50vw;
+	flex-shrink: 0;
+	display: flex;
+	flex-wrap: wrap;
+	flex-shrink: 0;
+	flex-direction: column;
+	font-size: 1.2vw;
+}
+
+
+#horizontal-scroll div h1 {
+	margin: 0;
+	font-size: 4em;
+}
+
+/*Experience and Skills Page*/
+
+#exp-skills {
+	flex-direction: column;
+	font-size: 2vh;
+}
+
+#exp-skills h3 {
+	margin: 0;
+}
+
+#exp-skills h4 {
+	margin: 0;
+	color: green;
+}
+
+
+#exp-skills ul {
+	display: flex;
+	flex-grow: 1;
+	font-size: 1.1em;
+	padding: 0px 10px;
+	flex-wrap: wrap;
+}
+
+#exp-skills ul li {
+	font-family: 'Oxygen', sans-serif;
+	padding: 2px 2vh;
+	box-shadow: 3px 3px 3px grey;
+	border: solid green;
+	background-color: green;
+	color: white;
+	border-radius: 50px;
+	margin: .5vh .6vh 2px 0;
+}
+
+#exp-skills ul li:hover {
+	box-shadow: 3px 3px 0px grey;
+}
+
+
+/* Project */
+
+
+#projects {
+	flex-direction: column;
+	font-size: 2vh;
+}
+
+
+#projects div.entry div.heading {
+	display: flex;
+	margin: 0;
+	padding: 10px;
+	width: 90%;
+	justify-content: space-between;
+}
+
+
+#projects div.entry div.heading div {
+	display: inline-flex;
+	gap: 1vh;
+}
+
+#projects div.entry h2 {
+	margin: 0;
+	text-align: left;
+}
+
+#projects div.entry div.heading:hover {
+	color: white;
+	background-color: rgb(159, 43, 104);
+}
+
+#projects div.entry .hidden-content {
+	/*display: none;*/
+	display: flex;
+	font-size: 1.1em;
+	width: 90%;
+	justify-content: space-between;
+	font-family: 'Oxygen', sans-serif;
+}
+
+
+#projects div.entry .hidden-content p {
+	width: 30%;
+}
+
+.learning-projects {
+	display: flex;
+	flex-wrap: wrap;
+	align-items: stretch;
+}
+
+.learning-projects div.entry-learning {
+	background-color: #ededed;
+	padding: 10px;
+	width: 29%;
+	margin: 1%;
+	font-size: 0.8em;
+}
+
+.learning-projects div h2 {
+	margin: 0px;
+}
+
+.learning-projects div a {
+	margin: 0px;
+	text-decoration: none;
+	color: inherit;
+}
+
+.learning-projects div:hover {
+	background-color: rgb(159, 43, 104);
+	color: white;
+}
+
+.entry-learning-heading {
+	display: flex;
+	justify-content: space-between;
+	width: 100%;
+}
+
+i {
+	font-size: 3vh;
+}
+
+#contact {
+	min-height: 63vh;
+	border-left: solid black;
+	padding: 0;
+	padding-left: 2vw;
+	margin: 10vh;
+}
+
+div.form {
+	display: grid;
+	grid-template-columns: repeat(5, 1fr);
+	grid-template-rows: repeat(6, 1fr);
+	width: 100%;
+	height: 48vh;
+	font-size: 2vh;
+}
+
+#contact input {
+	padding: 2px;
+	margin: 2px;
+	width: 80%;
+	height: 20px;
+}
+
+#contact input.subject {
+	grid-column: 2 / 6;
+}
+
+#contact button {
+	grid-column: 3 / 3;
+	grid-row: 6 / 6;
+	height: 4vh;
+}
+
+#contact textarea {
+	grid-column: 2 / 6;
+	grid-row: 3 / 5;
+}
+
+#contact label.email {
+	grid-column: 4 / 4;
+}
+
+#contact label.textarea {
+	grid-column: 1 / 1;
+	grid-row: 3 / 3;
+}
+
+footer {
+	background-color: black;
+	color: white;
+	margin: 0px;
+	bottom: 0;
+	position: bottom;
+}
+
+footer ul {
+	display: flex;
+	flex-grow: 1;
+	height: 7vh;
+	font-size: 1.5em;
+	align-items: end;
+	justify-content: center;
+	padding: 10px;
+}
+
+footer ul li {
+	margin: 0px 10px;
+	padding: 0px 5px;
+}
+
+
+footer ul li:hover {
+	color: black;
+	background-color: white;
+	border-radius: 50px;
+}
+
+footer p {
+	display: flex;
+	margin: 0;
+	color: grey;
+	justify-content: center;
+	padding: 10px;
+}
